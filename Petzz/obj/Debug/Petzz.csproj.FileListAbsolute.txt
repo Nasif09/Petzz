@@ -67,3 +67,12 @@ E:\AdvanceProgramingWith.Net\Petzz\Petzz\obj\Debug\Petzz.csproj.CoreCompileInput
 E:\AdvanceProgramingWith.Net\Petzz\Petzz\obj\Debug\Petzz.csproj.CopyComplete
 E:\AdvanceProgramingWith.Net\Petzz\Petzz\obj\Debug\Petzz.dll
 E:\AdvanceProgramingWith.Net\Petzz\Petzz\obj\Debug\Petzz.pdb
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\EntityFramework.dll
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\EntityFramework.SqlServer.dll
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\EntityFramework.xml
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\EntityFramework.SqlServer.xml
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\DAL.dll
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\AutoMapper.dll
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\DAL.pdb
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\DAL.dll.config
+E:\AdvanceProgramingWith.Net\Petzz\Petzz\bin\AutoMapper.xml

@@ -17,6 +17,7 @@ namespace DAL.Models
 
     public class Registration
     {
+        [Key]
         public int UID { get; set; }
 
         [Required(ErrorMessage = "Username is required.")]

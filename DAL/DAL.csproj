@@ -51,17 +51,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DataAccessfactory.cs" />
+    <Compile Include="Interfaces\IRepo.cs" />
+    <Compile Include="Migrations\202312281907225_Petzz.cs" />
+    <Compile Include="Migrations\202312281907225_Petzz.designer.cs">
+      <DependentUpon>202312281907225_Petzz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312300652453_BranchnameRename.cs" />
+    <Compile Include="Migrations\202312300652453_BranchnameRename.designer.cs">
+      <DependentUpon>202312300652453_BranchnameRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\PetzContext.cs" />
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\Branch.cs" />
-    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Registration.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\BranchRepo.cs" />
+    <Compile Include="Repos\RegistrationRepo.cs" />
+    <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\RoomRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202312281907225_Petzz.resx">
+      <DependentUpon>202312281907225_Petzz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312300652453_BranchnameRename.resx">
+      <DependentUpon>202312300652453_BranchnameRename.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

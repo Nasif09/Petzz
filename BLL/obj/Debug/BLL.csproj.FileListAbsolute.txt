@@ -7,3 +7,8 @@ E:\AdvanceProgramingWith.Net\Petzz\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.ca
 E:\AdvanceProgramingWith.Net\Petzz\BLL\obj\Debug\BLL.csproj.CopyComplete
 E:\AdvanceProgramingWith.Net\Petzz\BLL\obj\Debug\BLL.dll
 E:\AdvanceProgramingWith.Net\Petzz\BLL\obj\Debug\BLL.pdb
+E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\DAL.dll.config
+E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\EntityFramework.dll
+E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\EntityFramework.xml
+E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\AutoMapper.dll
+E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\AutoMapper.xml
