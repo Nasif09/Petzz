@@ -26,7 +26,7 @@ namespace Petzz.Controllers
             }
         }
         [HttpPost]
-        [Route("api/registration/create")]
+        [Route("api/user/create")]
         public HttpResponseMessage Create(RegistrationDTO c)
         {
             try
