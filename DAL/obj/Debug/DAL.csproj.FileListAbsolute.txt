@@ -13,3 +13,4 @@ E:\AdvanceProgramingWith.Net\Petzz\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\AdvanceProgramingWith.Net\Petzz\DAL\obj\Debug\DAL.Migrations.Petzz.resources
 E:\AdvanceProgramingWith.Net\Petzz\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 E:\AdvanceProgramingWith.Net\Petzz\DAL\obj\Debug\DAL.Migrations.BranchnameRename.resources
+E:\AdvanceProgramingWith.Net\Petzz\DAL\obj\Debug\DAL.Migrations.TokenDb.resources

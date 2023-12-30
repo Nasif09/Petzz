@@ -12,7 +12,9 @@ namespace DAL.Models
         public DbSet<Registration> Registrations { get; set; }   
         public DbSet<Branch> Branchs { get; set; }
         public DbSet<Room> Rooms { get; set; }
-        public DbSet<Booking> Bookings { get; set; }  
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Token> Tokens { get; set; }
+
 
     }
 }
