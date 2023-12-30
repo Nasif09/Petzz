@@ -1,6 +1,8 @@
 ﻿using DAL.Interfaces;
 using DAL.Models;
+using DAL.Models.Shop;
 using DAL.Repos;
+using DAL.Repos.Shop;
 
 namespace DAL
 {
@@ -20,5 +22,33 @@ namespace DAL
         {
             return new RegistrationRepo();
         }
+
+
+        public static IRepo<Category, int, bool> CategoryData()
+        {
+            return new CategoryRepo();
+        }
+
+        public static IRepo<Product, int, bool> ProductData()
+        {
+            return new ProductRepo();
+        }
+
+        public static IRepo<Order, int, bool> OrderData()
+        {
+            return new OrderRepo();
+        }
+
+        public static IRepo<Order_status, int, bool> OrderStatusData() {
+         return new Order_statusRepo();
+        
+        }
+
+
+
+
+
+
+
     }
 }
