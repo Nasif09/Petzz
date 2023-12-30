@@ -61,17 +61,31 @@
     <Compile Include="Migrations\202312300652453_BranchnameRename.designer.cs">
       <DependentUpon>202312300652453_BranchnameRename.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312301526212_shoptablescreated.cs" />
+    <Compile Include="Migrations\202312301526212_shoptablescreated.designer.cs">
+      <DependentUpon>202312301526212_shoptablescreated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PetzContext.cs" />
     <Compile Include="Models\Hostel\Booking.cs" />
     <Compile Include="Models\Hostel\Branch.cs" />
     <Compile Include="Models\Registration.cs" />
     <Compile Include="Models\Hostel\Room.cs" />
+    <Compile Include="Models\Shop\Category.cs" />
+    <Compile Include="Models\Shop\FeedBack.cs" />
+    <Compile Include="Models\Shop\Order.cs" />
+    <Compile Include="Models\Shop\Order_status.cs" />
+    <Compile Include="Models\Shop\Product.cs" />
+    <Compile Include="Models\Shop\Salary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\Hostel\BranchRepo.cs" />
     <Compile Include="Repos\RegistrationRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\Hostel\RoomRepo.cs" />
+    <Compile Include="Repos\Shop\CategoryRepo.cs" />
+    <Compile Include="Repos\Shop\OrderRepo.cs" />
+    <Compile Include="Repos\Shop\Order_statusRepo.cs" />
+    <Compile Include="Repos\Shop\ProductRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -83,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312300652453_BranchnameRename.resx">
       <DependentUpon>202312300652453_BranchnameRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312301526212_shoptablescreated.resx">
+      <DependentUpon>202312301526212_shoptablescreated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

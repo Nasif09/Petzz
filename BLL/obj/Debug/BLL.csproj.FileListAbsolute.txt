@@ -12,3 +12,17 @@ E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\EntityFramework.dll
 E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\EntityFramework.xml
 E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\AutoMapper.dll
 E:\AdvanceProgramingWith.Net\Petzz\BLL\bin\Debug\AutoMapper.xml
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\BLL.dll
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\BLL.pdb
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\AutoMapper.dll
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\DAL.dll
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\EntityFramework.dll
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\DAL.pdb
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\DAL.dll.config
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\AutoMapper.xml
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\bin\Debug\EntityFramework.xml
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.dll
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.pdb
