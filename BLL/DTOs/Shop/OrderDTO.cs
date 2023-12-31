@@ -27,7 +27,7 @@ namespace BLL.DTOs.Shop
         public int Product_Id { get; set; }
         public int Status_Id { get; set; }
 
-
+        public DateTime Date { get; set; }
 
     }
 }

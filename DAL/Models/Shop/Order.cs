@@ -29,7 +29,7 @@ namespace DAL.Models.Shop
         [ForeignKey("Order_status")]
         public int Status_Id { get; set; }
 
-
+        public DateTime Date { get; set; }
 
         public virtual Registration Registration { get; set; }
         public virtual Product Product { get; set; }

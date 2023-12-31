@@ -30,3 +30,4 @@ F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.dll
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.pdb
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.shoptablescreated.resources
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.orderandproducttablecolumnupdate.resources
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.ordertabledatecolumnadded.resources

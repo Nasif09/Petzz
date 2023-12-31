@@ -59,5 +59,25 @@ namespace BLL.Services.Shop
             return null;
         }
 
+        public static CategoryDTO Update(int id)
+        {
+            var data = DataAccessFactory.CategoryData().Read(id);
+
+
+
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Category, CategoryDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<CategoryDTO>(data);
+            return mapped;
+        }
+
+
+
+
+
+
     }
 }
