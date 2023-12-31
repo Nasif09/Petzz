@@ -1,6 +1,4 @@
-﻿using BLL.DTOs;
-using BLL.DTOs.Shop;
-using BLL.Services;
+﻿using BLL.DTOs.Shop;
 using BLL.Services.Shop;
 using System;
 using System.Collections.Generic;
@@ -11,16 +9,17 @@ using System.Web.Http;
 
 namespace Petzz.Controllers.Shop
 {
-    public class CategoryController : ApiController
+    public class ProductController : ApiController
     {
 
+
         [HttpGet]
-        [Route("api/Category")]
+        [Route("api/Product")]
         public HttpResponseMessage All()
         {
             try
             {
-                var data = CategoryService.Get();
+                var data = ProductService.Get();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -28,18 +27,17 @@ namespace Petzz.Controllers.Shop
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
-
 
 
 
 
         [HttpGet]
-        [Route("api/Category/{id}")]
+        [Route("api/Product/{id}")]
         public HttpResponseMessage Get(int Id)
         {
             try
             {
-                var data = CategoryService.Get(Id);
+                var data = ProductService.Get(Id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -47,9 +45,6 @@ namespace Petzz.Controllers.Shop
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
-
-
-
 
 
 
@@ -63,12 +58,12 @@ namespace Petzz.Controllers.Shop
 
 
         [HttpPost]
-        [Route("api/Category/create")]
-        public HttpResponseMessage Create(CategoryDTO c)
+        [Route("api/Product/create")]
+        public HttpResponseMessage Create(ProductDTO c)
         {
             try
             {
-                var data = CategoryService.Add(c);
+                var data = ProductService.Add(c);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -78,21 +73,16 @@ namespace Petzz.Controllers.Shop
 
         }
 
-
-
-
-
-
         [HttpDelete]
-        [Route("api/Category/delete/{id}")]
+        [Route("api/Product/delete/{id}")]
         public HttpResponseMessage Delete(int Id)
         {
-            var exdata = CategoryService.Get(Id);
+            var exdata = ProductService.Get(Id);
             if (exdata != null)
             {
                 try
                 {
-                    var data = CategoryService.Delete(Id);
+                    var data = ProductService.Delete(Id);
                     return Request.CreateResponse(HttpStatusCode.OK, "Deleted");
                 }
                 catch (Exception ex)
@@ -105,12 +95,6 @@ namespace Petzz.Controllers.Shop
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, "Not Found");
             }
         }
-
-
-
-
-
-
 
 
 
