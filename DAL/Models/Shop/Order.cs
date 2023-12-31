@@ -26,11 +26,15 @@ namespace DAL.Models.Shop
         public int User_id { get; set; }
         [ForeignKey("Product")]
         public int Product_Id { get; set; }
+        [ForeignKey("Order_status")]
+        public int Status_Id { get; set; }
+
+
 
         public virtual Registration Registration { get; set; }
         public virtual Product Product { get; set; }
 
-
+        public virtual Order_status Order_status { get; set; }
 
     }
 }

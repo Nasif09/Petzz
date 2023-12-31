@@ -1,14 +1,12 @@
 ﻿using AutoMapper;
-using BLL.DTOs;
-using DAL.Models;
+using BLL.DTOs.Shop;
+using DAL.Models.Shop;
 using DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BLL.DTOs.Shop;
-using DAL.Models.Shop;
 
 namespace BLL.Services.Shop
 {
@@ -24,6 +22,24 @@ namespace BLL.Services.Shop
             var mapper = new Mapper(config);
             return mapper.Map<List<CategoryDTO>>(data);
         }
+
+
+
+        public static CategoryDTO Get(int id)
+        {
+            var data = DataAccessFactory.CategoryData().Read(id);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Category, CategoryDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<CategoryDTO>(data);
+            return mapped;
+        }
+
+
+
+
         public static bool Add(CategoryDTO c)
         {
             var config = new MapperConfiguration(cfg =>
@@ -36,6 +52,12 @@ namespace BLL.Services.Shop
 
         }
 
+        public static CategoryDTO Delete(int id)
+        {
+            var data = DataAccessFactory.CategoryData().Delete(id);
+
+            return null;
+        }
 
     }
 }

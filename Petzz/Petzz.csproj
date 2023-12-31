@@ -96,6 +96,9 @@
     <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Controllers\Hostel\RoomController.cs" />
     <Compile Include="Controllers\Shop\CategoryController.cs" />
+    <Compile Include="Controllers\Shop\OrderController.cs" />
+    <Compile Include="Controllers\Shop\Order_statusController.cs" />
+    <Compile Include="Controllers\Shop\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

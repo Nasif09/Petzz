@@ -29,3 +29,4 @@ F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.csproj.CopyCo
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.dll
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.pdb
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.shoptablescreated.resources
+F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.orderandproducttablecolumnupdate.resources

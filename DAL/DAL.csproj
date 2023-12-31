@@ -65,6 +65,10 @@
     <Compile Include="Migrations\202312301526212_shoptablescreated.designer.cs">
       <DependentUpon>202312301526212_shoptablescreated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312311047191_orderandproducttablecolumnupdate.cs" />
+    <Compile Include="Migrations\202312311047191_orderandproducttablecolumnupdate.designer.cs">
+      <DependentUpon>202312311047191_orderandproducttablecolumnupdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PetzContext.cs" />
     <Compile Include="Models\Hostel\Booking.cs" />
@@ -100,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312301526212_shoptablescreated.resx">
       <DependentUpon>202312301526212_shoptablescreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312311047191_orderandproducttablecolumnupdate.resx">
+      <DependentUpon>202312311047191_orderandproducttablecolumnupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
