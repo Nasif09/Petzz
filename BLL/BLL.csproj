@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\EXTEND\FeedBackDTO.cs" />
+    <Compile Include="DTOs\EXTEND\SalaryDTO.cs" />
     <Compile Include="DTOs\Hostel\BranchDTO.cs" />
     <Compile Include="DTOs\RegistrationDTO.cs" />
     <Compile Include="DTOs\Hostel\RoomDTO.cs" />
@@ -52,6 +54,8 @@
     <Compile Include="DTOs\Shop\Order_statusDTO.cs" />
     <Compile Include="DTOs\Shop\ProductDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Extend\FeedBackService.cs" />
+    <Compile Include="Services\Extend\SalaryService.cs" />
     <Compile Include="Services\Hostel\BranchService.cs" />
     <Compile Include="Services\RegistrationService.cs" />
     <Compile Include="Services\Hostel\RoomService.cs" />

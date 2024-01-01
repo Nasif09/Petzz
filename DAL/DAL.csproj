@@ -86,6 +86,8 @@
     <Compile Include="Models\Shop\Product.cs" />
     <Compile Include="Models\Shop\Salary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\Extend\FeedBackRepo.cs" />
+    <Compile Include="Repos\Extend\SalaryRepo.cs" />
     <Compile Include="Repos\Hostel\BranchRepo.cs" />
     <Compile Include="Repos\RegistrationRepo.cs" />
     <Compile Include="Repos\Repo.cs" />

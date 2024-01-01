@@ -2,6 +2,7 @@
 using DAL.Models;
 using DAL.Models.Shop;
 using DAL.Repos;
+using DAL.Repos.Extend;
 using DAL.Repos.Shop;
 
 namespace DAL
@@ -44,7 +45,15 @@ namespace DAL
         
         }
 
+        public static IRepo<Salary, int, bool> SalaryData()
+        {
+            return new SalaryRepo();
+        }
 
+        public static IRepo<FeedBack, int, bool> FeedBackData()
+        {
+            return new FeedBackRepo();
+        }
 
 
 

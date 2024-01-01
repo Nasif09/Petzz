@@ -26,3 +26,17 @@ F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.csproj.CoreCo
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.csproj.CopyComplete
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.dll
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\BLL\obj\Debug\BLL.pdb
+G:\project\BLL\bin\Debug\BLL.dll
+G:\project\BLL\bin\Debug\BLL.pdb
+G:\project\BLL\bin\Debug\AutoMapper.dll
+G:\project\BLL\bin\Debug\DAL.dll
+G:\project\BLL\bin\Debug\EntityFramework.dll
+G:\project\BLL\bin\Debug\DAL.pdb
+G:\project\BLL\bin\Debug\DAL.dll.config
+G:\project\BLL\bin\Debug\AutoMapper.xml
+G:\project\BLL\bin\Debug\EntityFramework.xml
+G:\project\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+G:\project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\project\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\project\BLL\obj\Debug\BLL.dll
+G:\project\BLL\obj\Debug\BLL.pdb

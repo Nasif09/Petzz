@@ -92,6 +92,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Extend\FeedBackController.cs" />
+    <Compile Include="Controllers\Extend\SalaryController.cs" />
     <Compile Include="Controllers\Hostel\BranchController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Controllers\Hostel\RoomController.cs" />

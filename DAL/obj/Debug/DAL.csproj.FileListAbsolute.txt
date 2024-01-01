@@ -31,3 +31,21 @@ F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.pdb
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.shoptablescreated.resources
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.orderandproducttablecolumnupdate.resources
 F:\11th  Sem\DOT NET\Lets Do Project\Petzz\Petzz\DAL\obj\Debug\DAL.Migrations.ordertabledatecolumnadded.resources
+G:\project\DAL\bin\Debug\DAL.dll.config
+G:\project\DAL\bin\Debug\DAL.dll
+G:\project\DAL\bin\Debug\DAL.pdb
+G:\project\DAL\bin\Debug\EntityFramework.dll
+G:\project\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\project\DAL\bin\Debug\EntityFramework.xml
+G:\project\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\project\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+G:\project\DAL\obj\Debug\DAL.Migrations.Petzz.resources
+G:\project\DAL\obj\Debug\DAL.Migrations.BranchnameRename.resources
+G:\project\DAL\obj\Debug\DAL.Migrations.shoptablescreated.resources
+G:\project\DAL\obj\Debug\DAL.Migrations.orderandproducttablecolumnupdate.resources
+G:\project\DAL\obj\Debug\DAL.Migrations.ordertabledatecolumnadded.resources
+G:\project\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+G:\project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\project\DAL\obj\Debug\DAL.csproj.CopyComplete
+G:\project\DAL\obj\Debug\DAL.dll
+G:\project\DAL\obj\Debug\DAL.pdb
