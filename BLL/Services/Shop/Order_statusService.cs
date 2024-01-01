@@ -61,7 +61,28 @@ namespace BLL.Services.Shop
         }
 
 
+        public static bool Update(Order_statusDTO p)
+        {
+            var rdata = DataAccessFactory.OrderStatusData().Read();
+            var exdata = DataAccessFactory.OrderStatusData().Read(p.Id);
 
+            if (exdata != null)
+            {
+                var config = new MapperConfiguration(cfg =>
+                {
+                    cfg.CreateMap<Order_statusDTO, Order_status>();
+                });
+
+                var mapper = new Mapper(config);
+                var data = mapper.Map<Order_status>(p);
+
+
+                return DataAccessFactory.OrderStatusData().Update(data);
+            }
+
+
+            return false;
+        }
 
     }
 }

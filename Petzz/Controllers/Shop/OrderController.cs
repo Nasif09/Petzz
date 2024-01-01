@@ -95,6 +95,29 @@ namespace Petzz.Controllers.Shop
 
 
 
+        [HttpPut]
+        [Route("api/Order/update/{id}/{p}")]
+        public HttpResponseMessage Update(int Id,int p)
+        {
+            var exdata = OrderService.Get(Id);
+          
+            if (exdata != null)
+            {
+                try
+                {
+                    var data = OrderService.Update(Id,p);
+                    return Request.CreateResponse(HttpStatusCode.OK, "updated");
+                }
+                catch (Exception ex)
+                {
+                    return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+                }
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Not Found");
+            }
+        }
 
 
 
