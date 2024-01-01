@@ -54,6 +54,7 @@
     <Compile Include="DataAccessfactory.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
+    <Compile Include="Interfaces\IRoom.cs" />
     <Compile Include="Migrations\202312281907225_Petzz.cs" />
     <Compile Include="Migrations\202312281907225_Petzz.designer.cs">
       <DependentUpon>202312281907225_Petzz.cs</DependentUpon>
@@ -66,6 +67,10 @@
     <Compile Include="Migrations\202312301417074_TokenDb.designer.cs">
       <DependentUpon>202312301417074_TokenDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401011013281_updatedatabase.cs" />
+    <Compile Include="Migrations\202401011013281_updatedatabase.designer.cs">
+      <DependentUpon>202401011013281_updatedatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PetzContext.cs" />
     <Compile Include="Models\Hostel\Booking.cs" />
@@ -74,6 +79,7 @@
     <Compile Include="Models\Hostel\Room.cs" />
     <Compile Include="Models\Token.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\Hostel\BookingRepo.cs" />
     <Compile Include="Repos\Hostel\BranchRepo.cs" />
     <Compile Include="Repos\RegistrationRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312301417074_TokenDb.resx">
       <DependentUpon>202312301417074_TokenDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011013281_updatedatabase.resx">
+      <DependentUpon>202401011013281_updatedatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

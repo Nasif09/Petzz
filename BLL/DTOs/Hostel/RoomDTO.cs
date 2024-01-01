@@ -12,5 +12,6 @@ namespace BLL.DTOs
         public string Availability { get; set; }
         public int Price { get; set; }
         public string Description { get; set; }
+        public int BranchID { get; set; }
     }
 }

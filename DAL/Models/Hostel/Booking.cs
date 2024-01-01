@@ -15,8 +15,6 @@ namespace DAL.Models
         public int UID { get; set; }
         [ForeignKey("Room")]
         public int RoomID { get; set; }
-        [ForeignKey("Branch")]
-        public int BranchID { get; set; }
         [Required]
         public DateTime StartDate { get; set; }
         [Required]
@@ -25,7 +23,6 @@ namespace DAL.Models
         public  string Status { get; set; }
         public virtual Registration Registration { get; set; }
         public virtual Room Room { get; set; }
-        public virtual Branch Branch { get; set; }  
 
 
     }

@@ -34,6 +34,7 @@ namespace BLL.Services
             var mapped = mapper.Map<RoomDTO>(data);
             return mapped;
         }
+
         public static bool Add(RoomDTO c)
         {
             var config = new MapperConfiguration(cfg =>
@@ -44,6 +45,25 @@ namespace BLL.Services
             var data = mapper.Map<Room>(c);
             return DataAccessFactory.RoomData().Create(data);
 
+        }
+
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.RoomData().Delete(id);
+        }
+        public static bool Update(int id, RoomDTO updatedRoom)
+        {
+            var roomToUpdate = DataAccessFactory.RoomData().Read(id);
+
+            if (roomToUpdate != null)
+            {
+                roomToUpdate.Availability = updatedRoom.Availability;
+                roomToUpdate.Price = updatedRoom.Price; 
+                roomToUpdate.Description = updatedRoom.Description;
+                return DataAccessFactory.RoomData().Update(roomToUpdate);
+            }
+
+            return false;
         }
     }
 }

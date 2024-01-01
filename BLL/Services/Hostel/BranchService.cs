@@ -33,5 +33,45 @@ namespace BLL.Services
             return DataAccessFactory.BranchData().Create(data);
 
         }
+
+        //
+        public static List<BranchDTO> SearchByName(string branchName)
+        {
+            var data = DataAccessFactory.BranchData().Read().Where(b => b.Branchname.Contains(branchName)).ToList();
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Branch, BranchDTO>();
+            });
+            var mapper = new Mapper(config);
+            return mapper.Map<List<BranchDTO>>(data);
+        }
+
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.BranchData().Delete(id);
+        }
+        public static bool Update(int id, BranchDTO updatedBranch)
+        {
+            var branchToUpdate = DataAccessFactory.BranchData().Read(id);
+
+            if (branchToUpdate != null)
+            {
+                branchToUpdate.Branchname = updatedBranch.Branchname;
+                branchToUpdate.UID = updatedBranch.UID;
+                branchToUpdate.Location = updatedBranch.Location;
+                bool updateSuccess = DataAccessFactory.BranchData().Update(branchToUpdate);
+                if (updateSuccess)
+                {
+                    return true;
+                }
+                else
+                {
+                    throw new Exception("Failed to update");
+                }
+            }
+
+            return false;
+        }
+
     }
 }

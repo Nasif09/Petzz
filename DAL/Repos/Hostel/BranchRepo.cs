@@ -3,6 +3,7 @@ using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +33,11 @@ namespace DAL.Repos
         {
             return db.Branchs.Find(id);
         }
+
+/*        public List<Branch> SearchByName(string branchName)
+        {
+            return db.Branchs.Where(b => b.Branchname.Contains(branchName)).ToList();
+        }*/
 
         public bool Update(Branch obj)
         {

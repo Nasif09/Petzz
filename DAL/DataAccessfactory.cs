@@ -1,6 +1,7 @@
 ﻿using DAL.Interfaces;
 using DAL.Models;
 using DAL.Repos;
+using DAL.Repos.Hostel;
 
 namespace DAL
 {
@@ -27,6 +28,10 @@ namespace DAL
         public static IRepo<Token, string, Token> TokenData()
         {
             return new TokenRepo();
+        }
+        public static IRepo<Booking, int, bool> BookingData()
+        {
+            return new BookingRepo();
         }
     }
 }

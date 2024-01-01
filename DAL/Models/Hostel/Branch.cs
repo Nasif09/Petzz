@@ -17,5 +17,9 @@ namespace DAL.Models
         [ForeignKey("Registration")]
         public int? UID { get; set; }
         public virtual Registration Registration { get; set; }  
+        public virtual List<Room> Rooms { get; set; }
+        public Branch() { 
+            Rooms = new List<Room>();
+        }
     }
 }

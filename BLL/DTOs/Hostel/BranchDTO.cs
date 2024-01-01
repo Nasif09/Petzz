@@ -11,5 +11,6 @@ namespace BLL.DTOs
         public int BranchID { get; set; }
         public string Branchname { get; set; }
         public string Location { get; set; }
+        public int? UID { get; set; }
     }
 }
