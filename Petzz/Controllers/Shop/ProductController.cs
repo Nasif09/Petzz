@@ -98,5 +98,24 @@ namespace Petzz.Controllers.Shop
 
 
 
+
+        [HttpPut]
+        [Route("api/Product/update")]
+        public HttpResponseMessage Update(ProductDTO p)
+        {
+            try
+            {
+                var data = ProductService.Update(p);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+
+        }
+
+
+
     }
 }

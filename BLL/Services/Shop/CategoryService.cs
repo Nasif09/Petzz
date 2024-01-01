@@ -76,6 +76,28 @@ namespace BLL.Services.Shop
 
 
 
+        public static bool Update(CategoryDTO p)
+        {
+            var rdata = DataAccessFactory.CategoryData().Read();
+            var exdata = DataAccessFactory.CategoryData().Read(p.Id);
+
+            if (exdata != null)
+            {
+                var config = new MapperConfiguration(cfg =>
+                {
+                    cfg.CreateMap<CategoryDTO, Category>();
+                });
+
+                var mapper = new Mapper(config);
+                var data = mapper.Map<Category>(p);
+
+
+                return DataAccessFactory.CategoryData().Update(data);
+            }
+
+
+            return false;
+        }
 
 
 
