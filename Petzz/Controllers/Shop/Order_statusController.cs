@@ -95,9 +95,8 @@ namespace Petzz.Controllers.Shop
 
 
 
-
         [HttpPut]
-        [Route("api/Product/update")]
+        [Route("api/Order_status/update")]
         public HttpResponseMessage Update(Order_statusDTO p)
         {
             try

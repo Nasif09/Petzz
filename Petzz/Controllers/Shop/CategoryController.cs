@@ -110,7 +110,7 @@ namespace Petzz.Controllers.Shop
 
 
         [HttpPut]
-        [Route("api/Product/update")]
+        [Route("api/Category/update")]
         public HttpResponseMessage Update(CategoryDTO p)
         {
             try
