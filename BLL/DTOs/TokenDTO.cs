@@ -12,5 +12,6 @@ namespace BLL.DTOs
         public DateTime CreatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }
         public string UID { get; set; }
+        public string Role { get; set; }
     }
 }

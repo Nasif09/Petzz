@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Auth\AdminLogged.cs" />
     <Compile Include="Auth\Logged.cs" />
     <Compile Include="Controllers\Hostel\BookingController.cs" />
     <Compile Include="Controllers\Hostel\BranchController.cs" />
@@ -119,6 +120,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{b95632bf-4306-4721-ae22-e8e565f3eb49}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{026CBFFA-F116-4235-89F2-AF3A6BD30015}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

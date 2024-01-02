@@ -19,5 +19,6 @@ namespace DAL.Models
         public DateTime? DeletedAt { get; set; }
         [Required]
         public string UID {  get; set; }
+        public string Role { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using BLL.DTOs.Hostel;
 using BLL.Services;
 using BLL.Services.Hostel;
+using Petzz.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace Petzz.Controllers.Hostel
 {
     public class BookingController : ApiController
     {
+        [Logged(IsAdmin = true)]
         [HttpGet]
         [Route("api/bookings")]
         public HttpResponseMessage All()
@@ -27,6 +29,7 @@ namespace Petzz.Controllers.Hostel
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
+        [Logged(IsAdmin = false)] 
         [HttpPost]
         [Route("api/booking/create")]
         public HttpResponseMessage Create(BookingDTO c)
@@ -42,6 +45,8 @@ namespace Petzz.Controllers.Hostel
             }
 
         }
+        [Logged(IsAdmin = false)]
+        [Logged]
         [HttpDelete]
         [Route("api/booking/delete/{id}")]
         public HttpResponseMessage Delete(int id)
@@ -65,6 +70,8 @@ namespace Petzz.Controllers.Hostel
             }
 
         }
+
+        [Logged(IsAdmin = false)]
         [HttpPut]
         [Route("api/booking/update/{id}")]
         public HttpResponseMessage Update(int id, BookingDTO updatedBooking)
@@ -88,6 +95,7 @@ namespace Petzz.Controllers.Hostel
             }
 
         }
+        [Logged(IsAdmin = false)]
         [HttpGet]
         [Route("api/checkavailability")]
         public HttpResponseMessage CheckAvailability(CheckAvailabilityDTO c)

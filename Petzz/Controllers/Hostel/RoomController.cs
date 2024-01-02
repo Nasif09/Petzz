@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using Petzz.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Petzz.Controllers
 {
     public class RoomController : ApiController
     {
+        [Logged(IsAdmin = true)]
         [HttpGet]
         [Route("api/rooms")]
         public HttpResponseMessage All()
@@ -27,6 +29,7 @@ namespace Petzz.Controllers
             }
         }
 
+        [Logged(IsAdmin = true)]
         [HttpPost]
         [Route("api/room/create")]
         public HttpResponseMessage Create(RoomDTO c)
@@ -42,6 +45,8 @@ namespace Petzz.Controllers
             }
 
         }
+
+        [Logged(IsAdmin = true)]
         [HttpDelete]
         [Route("api/room/delete/{id}")]
         public HttpResponseMessage Delete(int id)
@@ -65,6 +70,7 @@ namespace Petzz.Controllers
             }
 
         }
+
         [HttpPut]
         [Route("api/room/update/{id}")]
         public HttpResponseMessage Update(int id, RoomDTO updatedRoom)

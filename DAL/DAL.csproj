@@ -71,6 +71,10 @@
     <Compile Include="Migrations\202401011013281_updatedatabase.designer.cs">
       <DependentUpon>202401011013281_updatedatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401020507314_tokenupdate.cs" />
+    <Compile Include="Migrations\202401020507314_tokenupdate.designer.cs">
+      <DependentUpon>202401020507314_tokenupdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PetzContext.cs" />
     <Compile Include="Models\Hostel\Booking.cs" />
@@ -102,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202401011013281_updatedatabase.resx">
       <DependentUpon>202401011013281_updatedatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401020507314_tokenupdate.resx">
+      <DependentUpon>202401020507314_tokenupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

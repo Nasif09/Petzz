@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using Petzz.Auth;
 using Petzz.Models;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace Petzz.Controllers
 {
     public class RegistrationController : ApiController
     {
+        [Logged(IsAdmin = true)]
         [HttpGet]
         [Route("api/users")]
         public HttpResponseMessage All()
@@ -48,18 +50,45 @@ namespace Petzz.Controllers
         {
             try
             {
-                var res = AuthService.Authenticate(login.Username, login.Password);
+                var res = AuthService.Authenticate(login.Username, login.Password, login.IsAdmin);
+
                 if (res != null)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, res);
                 }
-                else return Request.CreateResponse(HttpStatusCode.NotFound, new { Message = "User not Found " });
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { Message = "User not Found " });
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
+
+        [HttpPost]
+        [Route("api/logout")]
+        public HttpResponseMessage Logout()
+        {
+            var tokenKey = Request.Headers.Authorization.ToString();
+            try
+            {
+                if (AuthService.Logout(tokenKey))
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, "Logout successful.");
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, "Token not found or could not be logged out.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
 
     }
 }

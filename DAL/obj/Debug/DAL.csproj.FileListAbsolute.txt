@@ -31,3 +31,4 @@ D:\Petzz\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Petzz\DAL\obj\Debug\DAL.dll
 D:\Petzz\DAL\obj\Debug\DAL.pdb
 D:\Petzz\DAL\obj\Debug\DAL.Migrations.updatedatabase.resources
+D:\Petzz\DAL\obj\Debug\DAL.Migrations.tokenupdate.resources

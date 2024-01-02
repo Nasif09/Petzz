@@ -12,7 +12,7 @@ namespace Petzz.Controllers
 {
     public class BranchController : ApiController
     {
-        [Logged]
+        [Logged(IsAdmin = true)]
         [HttpGet]
         [Route("api/branchs")]
         public HttpResponseMessage All()
@@ -28,7 +28,7 @@ namespace Petzz.Controllers
             }
         }
 
-        [Logged]
+        [Logged(IsAdmin = true)]
         [HttpPost]
         [Route("api/branch/create")]
         public HttpResponseMessage Create(BranchDTO c)
@@ -45,6 +45,7 @@ namespace Petzz.Controllers
 
         }
 
+        [Logged(IsAdmin = true)]
         [HttpDelete]
         [Route("api/branch/delete/{id}")]
         public HttpResponseMessage Delete(int id)
@@ -68,6 +69,8 @@ namespace Petzz.Controllers
             }
 
         }
+
+        [Logged(IsAdmin = true)]
         [HttpPut]
         [Route("api/branch/update/{id}")]
         public HttpResponseMessage Update(int id, BranchDTO updatedBranch)
@@ -91,6 +94,8 @@ namespace Petzz.Controllers
             }
 
         }
+
+
         [HttpGet]
         [Route("api/branch/search/{branchName}")]
         public HttpResponseMessage SearchByName(string branchName)

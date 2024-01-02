@@ -10,7 +10,7 @@ namespace DAL.Repos
 {
     internal class RegistrationRepo : Repo, IRepo<Registration, int, bool>, IAuth<bool>
     {
-        public bool Authenticate(string username, string password)
+        public bool Authenticate(string username, string password, string role)
         {
             var data = db.Registrations.FirstOrDefault(u => u.Username.Equals(username)
             && u.Password.Equals(password));
